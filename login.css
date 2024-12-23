@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bg {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fitnees h2 {
+    color: white;
+    font-family: serif;
+    font-weight: 700;
+}
+
+.fitnees {
+    background-color: #d63031;
+    padding: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    text-decoration-color: white;
+}
+
+.ft {
+    color: red;
+}
+
+.intro label {
+    /*display: block;*/
+    font-size: 16px;
+    font-family: serif;
+    margin-top: 1rem;
+    /*text-align: center;*/
+}
+
+.intro input {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: 1px solid white;
+    padding: 0 .1rem;
+    margin-top: .1rem;
+    border-radius: 5px;
+    font-family: serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn {
+    padding: .8rem 3rem;
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-family: serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to right, #ec38bc, #7303c0);
+}
+
+.links {
+    font-size: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover {
+    color: blue;
+}

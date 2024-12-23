@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Admin Login Form</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                font-family: montserrat;
+                background-image: url("loginimage.jpg");
+                height: 100vh;
+                /* overflow: hidden; */
+                background-size: cover;
+            }
+            .center{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 400px;
+                background: white;
+                border-radius: 10px;
+            }
+            .center h1{
+                text-align: center;
+                padding: 0 0 20px 0;
+                color: #658bd7;
+            }
+            .center form{
+                padding: 0 40px;
+                box-sizing: border-box;
+            }
+            form .text-field{
+                position: relative;
+                border-bottom: 2px solid #f27575;
+                margin: 30px 0;
+            }
+            .text-field input{
+                width: 100%;
+                padding: 0 5px;
+                height: 40px;
+                font-size: 16px;
+                border: none;
+                background: none;
+                outline: none;
+            }
+            .text-field label{
+                position: absolute;
+                top: 50%;
+                left: 5px;
+                color: #fa85a0;
+                transform: translateY(-50%);
+                font-size: 16px;
+                pointer-events: none;
+                transition: .5s;
+            }
+            .text-field span::before{
+                content: '';
+                position: absolute;
+                top: 40px;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background: #e9e9f3;
+                transition: .5s;
+            }
+            .text-field input:focus ~ label,
+            .text-field input:valid ~ label{
+                top: -5px;
+                color: #e8537d;
+            }
+            .text-field input:focus ~ span::before,
+            .text-field input:valid ~ span::before{
+                width: 100%;
+
+            }
+            .pass{
+                margin: -5 px 0 20px 5px;
+                color: #e26464;
+                cursor: pointer;
+            }
+            .pass:hover{
+              text-decoration: underline;
+            }
+            input[type="submit"]{
+                width: 100%;
+                height: 50px;
+                border: 1px solid;
+                background: orange;
+                border-radius: 25px;
+                font-size: 18px;
+                color: #4628cb;
+                font-weight: 700;
+                cursor: pointer;
+                outline: none;
+            }
+            input[type="submit"]:hover{
+                border-color: green;
+                transition: .5s;
+            }
+        </style
+    </head>
+    <body>
+    <div class="center">
+               <h1>Admin Login</h1>
+               <form action="adminlogin.jsp" method="post">
+                <div class="text-field">
+                    <input type="text" name="email" required>
+                    <span></span>
+                    <label>Email</label>
+                </div>
+                <div class="text-field">
+                    <input type="password" name="pwd" required>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <br>
+                <input type="submit" value="Login">
+                <br>
+                <br>
+               </form>
+    </div>
+
+
+<center><a href="home.html" ><button>goback</button></a></center>
+
+    </body>
+    </html>
